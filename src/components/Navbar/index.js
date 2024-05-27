@@ -229,8 +229,8 @@ const Navbar = () => {
                                 <MobileLink href="#projects" onClick={()=>setIsOpen(!isOpen)}>Projects</MobileLink>
                                 <MobileLink href="#education" onClick={()=>setIsOpen(!isOpen)}>Education</MobileLink>
                                 <MobileButtonContainer isOpen={isOpen}>
-                                    <MobileButton href="https://github.com/kjcreddy666" target="blank">Github</MobileButton>
-                                    <MobileButton href="https://linkedin.com/in/kjcreddy666" target="blank">LinkedIn</MobileButton>
+                                    <MobileButton href="https://github.com/deepakyadav121999" target="blank">Github</MobileButton>
+                                    <MobileButton href="https://www.linkedin.com/in/deepak-yadav-094a6a235/" target="blank">LinkedIn</MobileButton>
                                 </MobileButtonContainer>
                             </MobileMenu>
                         
