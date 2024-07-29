@@ -209,8 +209,17 @@ export const experiences = [
 ];
   
 export const education = [
+  {
+    id: 0,
+    img: "logo.png",
+    school: "30 Days Codding",
+    date: "2024 - 2024",
+    grade: "A+",
+    desc: "I have Completed Full Stack Web Development Course Where i have learn various tech stacks like Html, Css, Javascript, Reactjs, Nodejs, MongoDb, Expressjs and tailwind css and created 50+ assignment/project using these tech stacks",
+    degree: "Full Stack Web Developer / Mern Stack Web Developer",
+  },
     {
-      id: 0,
+      id: 1,
       img: "college1.png",
       school: "St. Aloysius Institute Of Technology, Jabalpur",
       date: "2017 - 2022",
@@ -219,7 +228,7 @@ export const education = [
       degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
     },
     {
-      id: 1,
+      id: 2,
       img: "school.png",
       school: "Govt Higher Secondary School Maneri, Niwas",
       date: "2015 - 2017",
@@ -228,7 +237,7 @@ export const education = [
       degree: "Board Of Secondary Education Mp - MPC(Maths, Physics, Chemistry)",
     },
     {
-      id: 2,
+      id: 3,
       img: "school.png",
       school: "Govt Higher Secondary School Maneri, Niwas",
       date: "2013 - 2015",
