@@ -215,7 +215,7 @@ export const education = [
     school: "30 Days Codding",
     date: "2024 - 2024",
     grade: "A+",
-    desc: "I have Completed Full Stack Web Development Course Where i have learn various tech stacks like Html, Css, Javascript, Reactjs, Nodejs, MongoDb, Expressjs and tailwind css and created 50+ assignment/project using these tech stacks",
+    desc: "I have Completed Full Stack Web Development Course Where i have learn various tech stacks like Html, Css, Javascript, Reactjs, Nodejs, MongoDb, Expressjs and tailwind css and created 50+ assignment/project using these tech stacks.",
     degree: "Full Stack Web Developer / Mern Stack Web Developer",
   },
     {
