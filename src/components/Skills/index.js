@@ -9,6 +9,13 @@ justify-content: center;
 position: relative;
 z-index: 1;
 align-items: center;
+padding: 0 16px;
+@media (max-width: 768px) {
+    padding: 0 12px;
+}
+@media (max-width: 480px) {
+    padding: 0 8px;
+}
 `;
 
 const Wrapper = styled.div`
@@ -54,6 +61,13 @@ const SkillsContainer = styled.div`
   margin-top: 30px;
   gap: 30px;
   justify-content: center;
+  @media (max-width: 768px) {
+    gap: 20px;
+  }
+  @media (max-width: 500px) {
+    gap: 16px;
+    margin-top: 20px;
+  }
 `
 
 const SkillCard = styled.div`
@@ -66,11 +80,16 @@ const SkillCard = styled.div`
   padding: 18px 36px;
   @media (max-width: 768px) {
     max-width: 400px;
-    padding: 10px 36px;
+    padding: 16px 20px;
   }
   @media (max-width: 500px) {
-    max-width: 330px;
-    padding: 10px 36px;
+    max-width: 100%;
+    padding: 12px 16px;
+    margin: 0 4px;
+  }
+  @media (max-width: 400px) {
+    padding: 10px 12px;
+    margin: 0 2px;
   }
 `;
 
@@ -80,6 +99,14 @@ const SkillTitle = styled.h2`
   color: ${({ theme }) => theme.text_secondary};
   margin-bottom: 20px;
   text-align: center;
+  @media (max-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  @media (max-width: 500px) {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
 `
 
 const SkillList = styled.div`
@@ -101,19 +128,41 @@ const SkillItem = styled.div`
   align-items: center;
   justify-content: center;
   gap: 8px;
+  word-break: break-word;
+  min-width: 0;
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 8px 12px;
+    gap: 6px;
   }
   @media (max-width: 500px) {
-    font-size: 14px;
-    padding: 6px 12px;
+    font-size: 13px;
+    padding: 6px 10px;
+    gap: 4px;
+  }
+  @media (max-width: 400px) {
+    font-size: 12px;
+    padding: 5px 8px;
+    gap: 4px;
   }
 `
 
 const SkillImg = styled.img`
   width: 24px;
   height: 24px;
+  flex-shrink: 0;
+  @media (max-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
+  @media (max-width: 500px) {
+    width: 18px;
+    height: 18px;
+  }
+  @media (max-width: 400px) {
+    width: 16px;
+    height: 16px;
+  }
 `
 
 const Skills = () => (
@@ -129,15 +178,14 @@ const Skills = () => (
 
             <SkillsContainer>
                 {
-                    skills.map((item) => (
-
-                        <SkillCard>
+                    skills.map((item, index) => (
+                        <SkillCard key={index}>
                             <SkillTitle>{item.title}</SkillTitle>
                             <SkillList>
                                 {
-                                    item.skills.map((skill) => (
-                                        <SkillItem>
-                                            <SkillImg src={require(`../../images/${skill.image}`)}/>
+                                    item.skills.map((skill, skillIndex) => (
+                                        <SkillItem key={skillIndex}>
+                                            <SkillImg src={skill.image.startsWith('http') ? skill.image : require(`../../images/${skill.image}`)}/>
                                             {skill.name}
                                         </SkillItem>
                                     ))

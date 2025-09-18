@@ -7,6 +7,7 @@ import {darkTheme} from './utils/Themes';
 import Navbar from './components/Navbar';
 import Hero from './components/HeroSection';
 import Skills from './components/Skills'
+import Experience from './components/Experience';
 import Education from './components/Education';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
@@ -33,6 +34,7 @@ function App() {
 
           <Wrapper>
             <Skills/>
+            <Experience/>
             <Projects/>
             <Education/>
           </Wrapper>
