@@ -132,7 +132,7 @@ export const skills = [
 export const experiences = [
     {
       id: 0,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
+      img: "https://portal.docpoc.app/_next/image?url=https%3A%2F%2Fdocpoc-assets.s3.ap-south-1.amazonaws.com%2Fdocpoc-images%2Flogo-dark.png&w=96&q=75",
       role: "Full Stack Developer",
       company: "DocPoc.app",
       date: "Present",
