@@ -1,3 +1,5 @@
+import robo1 from '../images/robo1.png';
+
 export const Bio = {
     name: "Deepak Yadav",
     roles: [
@@ -110,16 +112,18 @@ export const skills = [
     {
       title: "Others",
       skills: [
-        // {
-        //   name: "Git",
-        //   image:
-        //     "Git-logo.png",
-        // },
+         {
+          name: "Docker",
+          image:
+            "docker.png",
+        },
         {
           name: "GitHub",
           image:
             "GitHub-logo.png",
         },
+        
+
         {
           name: "VS Code",
           image:
@@ -130,12 +134,32 @@ export const skills = [
 ];
   
 export const experiences = [
-    {
+   {
       id: 0,
+      img: robo1, // swap in Robkriti's logo if you have one
+      role: "Full Stack Developer",
+      company: "Robkriti, Jabalpur",
+      date: "Present",
+      desc: "Working as a Full Stack Developer on IoT-based server applications, building and deploying backend systems that communicate with IoT devices over MQTT. Handling containerization, deployment, and maintenance of production code.",
+      skills: [
+        "Next.js",
+        "NestJS",
+        "TypeScript",
+        "Tailwind CSS",
+        "SQL",
+        "MQTT",
+        "IoT",
+        "Docker",
+        "Containerization",
+        "Deployment",
+      ],
+    },
+    {
+      id: 1,
       img: "https://portal.docpoc.app/_next/image?url=https%3A%2F%2Fdocpoc-assets.s3.ap-south-1.amazonaws.com%2Fdocpoc-images%2Flogo-dark.png&w=96&q=75",
       role: "Full Stack Developer",
       company: "DocPoc.app",
-      date: "Present",
+      date: "1 Year",
       desc: "Currently working as a Full Stack Developer building real-time clinic management system. Developing comprehensive healthcare solutions with modern web technologies, implementing real-time features for clinic operations, patient management, and healthcare workflows.",
       skills: [
         "Next.js",
@@ -162,12 +186,12 @@ export const education = [
     degree: "Full Stack Web Developer / Mern Stack Web Developer",
   },
     {
-      id: 1,
+      id: 2,
       img: "college1.png",
       school: "St. Aloysius Institute Of Technology, Jabalpur",
       date: "2017 - 2022",
       grade: "6.80 CGPA",
-      desc: "I completed my Bachelor's degree in Computer Science and Engineering at St. Aloysius Institute Of Technology, Jabalpur with a CGPA of 6.8. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
+      desc: "I completed my Bachelor's degree in Computer Science and Engineering at St. Aloysius Institute Of Technology, Jabalpur with a CGPA of 6.8. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems.",
       degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
     },
     {
@@ -191,8 +215,47 @@ export const education = [
 ];
   
 export const projects = [
+   
     {
-      id: 9,
+      id: 1,
+      title: "DocPoc",
+      description:
+        "Built a real-time clinic management platform for small healthcare practices, digitizing patient records, appointments, and clinical documentation. Replaced manual paperwork with a real-time workflow for patient intake, visit notes, and record-keeping, reducing administrative overhead for clinic staff.",
+      image: "docpoc.png",
+      tags: [
+        "Next.js",
+        "TypeScript",
+        "NestJS",
+        "SQL",
+        "Tailwind CSS",
+        "Real-time Systems",
+      ],
+      category: "web app",
+      github: "https://docpoc.app/",
+      webapp: "https://docpoc.app/",
+    },
+
+    {
+      id: 2,
+      title: "Robkriti – IoT Platform",
+      description:
+        "Developing backend infrastructure for IoT-based systems, handling device communication over MQTT, containerized deployments, and production maintenance. Designed to reliably ingest and process data streams from connected IoT hardware in real time.",
+      image: "robo.png",
+      tags: [
+        "NestJS",
+        "TypeScript",
+        "MQTT",
+        "IoT",
+        "Docker",
+        "SQL",
+        "Next.js",
+      ],
+      category: "web app",
+      github: "https://robokriti.co.in/",
+      webapp: "",
+    },
+    {
+      id: 3,
       title: "Meesho Clone",
       description:
         "Developed a user-friendly e-commerce website with a range of features, including search functionality, wishlist creation, filtering options, and a seamless shopping cart system",
@@ -212,7 +275,7 @@ export const projects = [
     },
 
     {
-      id: 9,
+      id: 4,
       title: "Portfolio",
       description:
         "Explore my sleek portfolio, built with HTML5, CSS3, JavaScript, and React.js. Discover my skills and projects through seamless design and interactivity, optimized for any device.",
@@ -230,7 +293,7 @@ export const projects = [
     },
 
     {
-      id: 9,
+      id: 5,
       title: "Linkedin Clone",
       description:
         "Developed a dynamic web application using React.js that allows users to create, share, and manage personalized lists of favorite links. .",
@@ -247,27 +310,11 @@ export const projects = [
       webapp: "https://clone-linked.vercel.app/",
     },
 
-    {
-      id: 9,
-      title: "To-do App",
-      description:
-        `"Designed and developed a to-do list web application using React.js, aimed at helping users organize tasks and manage their daily activities efficiently`,
-      image:
-        "todo.png",
-      tags: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "React"
-      ],
-      category: "web app",
-      github: "https://github.com/deepakyadav121999/to-do-app",
-      webapp: "https://github.com/deepakyadav121999/to-do-app",
-    },
 
 
 ];
   
+
 export const TimeLineData = [
     { year: 2017, text: "Started my journey" },
     { year: 2018, text: "Worked as a freelance developer" },

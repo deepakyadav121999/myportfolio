@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {Bio} from "../../data/constants";
 import Typewriter from "typewriter-effect";
 import HeroBgAnimation from "../HeroBgAnimation";
-
+import myPhoto from "../../images/profile.png"
 const HeroConatiner = styled.div`
     background-color : ${({theme})=>theme.card_light};
     display : flex;
@@ -154,6 +154,25 @@ export const Description = styled.div`
 `;
 
 
+// const Img = styled.img`
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   max-width: 400px;
+//   max-height: 400px;
+//   border-radius: 50%;
+//   border: 2px solid ${({ theme }) => theme.primary};
+
+//   @media (max-width: 768px) {
+//     max-width: 400px;
+//     max-height: 400px;
+//   }
+
+//   @media (max-width: 640px) {
+//     max-width: 280px;
+//     max-height: 280px;
+//   }
+// `;
 const Img = styled.img`
   position: relative;
   width: 100%;
@@ -162,6 +181,7 @@ const Img = styled.img`
   max-height: 400px;
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.primary};
+  box-shadow: 0 0 40px ${({ theme }) => theme.primary}55;
 
   @media (max-width: 768px) {
     max-width: 400px;
@@ -209,7 +229,7 @@ const Hero = () => {
                     </HeroLeftContainer>
 
                     <HeroRightContainer>
-                        <Img></Img>
+                        <Img src={myPhoto} alt="Profile" />
                     </HeroRightContainer>
                 </HeroInnerContainer>
             </HeroConatiner>
