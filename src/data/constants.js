@@ -7,7 +7,9 @@ export const Bio = {
       "Front End Developer",
       "Back End Developer"
     ],
-    description: " I am a dedicated and passionate Full Stack Web Developer with a solid foundation in Computer Science and Engineering. Graduating with a Bachelor's degree in Computer Science and Engineering in 2022, I embarked on a transformative journey to further enhance my skills. This led me to pursue a rigorous 9-month Full Stack Web Development bootcamp at Newton School, where I honed my expertise in modern web technologies and best practices.",
+    // description: " I am a dedicated and passionate Full Stack Web Developer with a solid foundation in Computer Science and Engineering. Graduating with a Bachelor's degree in Computer Science and Engineering in 2022, I embarked on a transformative journey to further enhance my skills. This led me to pursue a rigorous 9-month Full Stack Web Development bootcamp at Newton School, where I honed my expertise in modern web technologies and best practices.",
+    description:
+  "Full Stack Developer with professional experience in Healthcare and IoT applications. I have built real-time clinic management systems at DocPoc using Next.js, NestJS, TypeScript, SQL, and Tailwind CSS, focusing on patient management and healthcare workflows. Currently, I develop IoT server applications at Robokriti, working with MQTT, Docker, NestJS, and scalable backend architectures. Passionate about building reliable, high-performance applications and solving real-world problems through technology.",
     github: "https://github.com/deepakyadav121999",
     resume: "https://drive.google.com/file/d/1ffZrcMcn8UatXGIaautbbqpV7ADNaETA/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/deepak-yadav-094a6a235/",
